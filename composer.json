@@ -1,0 +1,32 @@
+{
+    "name": "muna/muna",
+    "description": "The Muna Framework Skeleton",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": "^8.4",
+        "muna/framework": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-create-project-cmd": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
