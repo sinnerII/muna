@@ -15,9 +15,9 @@ class RouteServiceProvider extends ServiceProvider {
 	{
 		Facade::setFacadeApplication($this->app);
 
-		$this->app->container->set('router',Router::create());
-		$this->app->container->set('request',new Request());
-		$this->app->container->set('response',new Response());
+		$request = $this->app->container->set('request',new Request());
+		$response = $this->app->container->set('response',new Response());
+		$router = $this->app->container->set('router',Router::create($request,$response));
 
 	}
     
