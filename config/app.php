@@ -3,7 +3,7 @@
 return [
 
     'name' => 'Muna Application',
-    'version' => '1.0.2',
+    'version' => '1.0.3',
 	'database' => [
 		'driver' => 'mysql'
 	],

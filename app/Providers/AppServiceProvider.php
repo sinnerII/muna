@@ -2,12 +2,17 @@
 
 namespace App\Providers;
 
-use Muna\Framework\Support\ServiceProvider;
-use Muna\Framework\Routing\Route;
+use Munastack\Support\Providers\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider {
     
-    public function boot() {
+	public function register(): void
+	{
+		
+	}
+
+    public function boot(): void
+	{
 
     }
 }
